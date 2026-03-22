@@ -1,0 +1,24 @@
+FROM python:3.12-slim
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    libpq-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY apps/api/pyproject.toml apps/api/README.md /app/apps/api/
+COPY apps/api/yasar_nuri_api /app/apps/api/yasar_nuri_api
+COPY apps/api/alembic /app/apps/api/alembic
+COPY apps/api/alembic.ini /app/apps/api/alembic.ini
+COPY packages/prompt_assets /app/packages/prompt_assets
+
+WORKDIR /app/apps/api
+RUN pip install --no-cache-dir -e .
+
+ENV PYTHONPATH=/app/apps/api
+ENV PROMPT_ASSETS_DIR=/app/packages/prompt_assets
+
+EXPOSE 8000
+
+CMD ["uvicorn", "yasar_nuri_api.main:app", "--host", "0.0.0.0", "--port", "8000"]

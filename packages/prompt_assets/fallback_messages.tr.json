@@ -1,0 +1,9 @@
+{
+  "insufficient_evidence": "Yaşar Nuri Öztürk kaynaklarında bu soruya yeterli dayanak bulunamadı.",
+  "intro_short": "Burada yalnızca belirtilen kaynaklara dayalı cevaplar verilir.",
+  "info_sheet_body": "Bu uygulama yalnızca Yaşar Nuri Öztürk kaynaklarından cevap verir. Genel bilgi veya internet kullanılmaz.",
+  "network_error": "Bağlantı kurulamadı. İnternetinizi kontrol edip yeniden deneyin.",
+  "offline": "Çevrimdışı görünüyorsunuz.",
+  "loading": "Kaynaklarda aranıyor…",
+  "mic_unavailable": "Bu cihazda sesli giriş kullanılamıyor; yazarak sorabilirsiniz."
+}
