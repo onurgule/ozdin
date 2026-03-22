@@ -1,6 +1,7 @@
 # YasarNuri
 
-Kaynak temelli soru-cevap uygulaması: yalnızca sağlanan Yaşar Nuri Öztürk metinlerinden cevap verir.
+Kaynak temelli soru-cevap uygulaması: yalnızca sağlanan Yaşar Nuri Öztürk metinlerinden cevap verir.,
+https://ozdin.org.tr
 
 ## Gereksinimler
 
